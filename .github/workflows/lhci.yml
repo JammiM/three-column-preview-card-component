@@ -2,6 +2,7 @@ name: CI
 on: [push]
 env:
   VITE_BASE: /
+  LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 jobs:
   lhci:
     name: Lighthouse
