@@ -14,7 +14,10 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: run Lighthouse CI
+      - name: Start server and run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.15.x
+          npx http-server ./dist -p 3000 &
+          sleep 3
           lhci autorun
+          pkill -f "http-server"
