@@ -14,10 +14,6 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Start local server
-        run: npx http-server ./dist --port 8080 --gzip false &
-      - name: Wait for server
-        run: sleep 2
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.15.x
