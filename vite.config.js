@@ -6,5 +6,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: "/three-column-preview-card-component",
+  base: process.env.VITE_BASE || "/three-column-preview-card-component",
 });

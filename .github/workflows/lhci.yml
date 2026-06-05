@@ -1,5 +1,7 @@
 name: CI
 on: [push]
+env:
+  VITE_BASE: /
 jobs:
   lhci:
     name: Lighthouse
