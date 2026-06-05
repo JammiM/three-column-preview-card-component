@@ -1,9 +1,0 @@
-export const ci = {
-  collect: {
-    staticDistDir: "./dist",
-    url: "http://localhost:8080/index.html",
-  },
-  upload: {
-    target: "temporary-public-storage",
-  },
-};
