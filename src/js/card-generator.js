@@ -5,13 +5,16 @@ export function addCardsToPage(element) {
 
   cardData.map((card) => {
     const { heading, description, colour } = card;
+
+    const iconUrl = new URL(
+      `../assets/icon-${heading.toLowerCase()}.svg`,
+      import.meta.url
+    ).href;
+
     const singleCardTemplate = `
-    <article class="card" style="background-color: ${colour};" >
+    <article class="card" style="background-color: ${colour};" > 
         <picture>
-            <img src=${
-              new URL("../assets/icon-" + heading + ".svg", import.meta.url)
-                .href
-            } alt="${heading} Logo"/>
+            <img src=${iconUrl} alt="${heading} Logo"/>
         </picture>
         <h1 class="card-heading">${heading}</h1>
         <p class="card-description">${description}</p>
