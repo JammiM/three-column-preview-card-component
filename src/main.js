@@ -8,10 +8,10 @@ import javascriptLogo from "./assets/javascript.svg";
 import { addCardsToPage } from "./js/card-generator.js";
 
 document.querySelector("#app").innerHTML = `
-<section id="center">
+<main>
   <section id="card-holder">
   </section>
-</section>
+</main>
 `;
 
 addCardsToPage(document.querySelector("#card-holder"));
