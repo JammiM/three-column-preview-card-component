@@ -22,6 +22,20 @@
   }
 }
 
-body {
-  margin: 0;
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#card-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 80%;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 90%;
+  }
 }
