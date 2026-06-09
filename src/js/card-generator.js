@@ -13,9 +13,9 @@ export function addCardsToPage(element) {
                 .href
             } alt="${heading} Logo"/>
         </picture>
-        <h1>${heading}</h1>
-        <p>${description}</p>
-        <button type="button">Learn More</button>
+        <h1 class="card-heading">${heading}</h1>
+        <p class="card-description">${description}</p>
+        <button data-colour=${heading} class="card-learn-btn" type="button">Learn More</button>
     </article>`;
     htmlTemplate += singleCardTemplate;
   });

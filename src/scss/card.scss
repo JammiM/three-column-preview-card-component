@@ -1,0 +1,33 @@
+.card {
+  padding: 20px;
+  color: var(--default-white);
+}
+
+.card-learn-btn {
+  padding: 10px;
+  border-color: var(--default-white);
+  border-radius: 50px;
+  border-style: double;
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.card-learn-btn[data-colour="Luxury"] {
+  color: var(--luxury-clr);
+}
+
+.card-learn-btn[data-colour="SUVs"] {
+  color: var(--suv-clr);
+}
+
+.card-learn-btn[data-colour="Sedans"] {
+  color: var(--sedans-clr);
+}
+
+[data-colour] {
+  &:active {
+    color: var(--default-white);
+  }
+}
