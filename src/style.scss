@@ -1,19 +1,14 @@
 :root {
   --text: #6b6375;
-
-  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-
-  --ff-Lexend-Deca: "Lexend Deca", sans-serif;
-  --ff-Big-Shoulders: "Big Shoulders", sans-serif;
-
-  --default-white: hsl(0, 0%, 100%);
-  --luxury-clr: hsl(179, 100%, 13%);
-  --suv-clr: hsl(184, 100%, 22%);
-  --sedans-clr: hsl(31, 80%, 38%);
-
+  --shadow: rgb(0 0 0 / 10%) 0 10px 15px -3px,
+    rgb(0 0 0 / 5%) 0 4px 6px -2px;
+  --sans: system-ui, "Segoe UI", roboto, sans-serif;
+  --ff-lexend-deca: "Lexend Deca", sans-serif;
+  --ff-big-shoulders: "Big Shoulders", sans-serif;
+  --default-white: hsl(0deg 0% 100%);
+  --luxury-clr: hsl(179deg 100% 13%);
+  --suv-clr: hsl(184deg 100% 22%);
+  --sedans-clr: hsl(31deg 80% 38%);
   --fw-light: 400;
   --fw-bold: 700;
 
@@ -21,11 +16,11 @@
   font-synthesis: none;
   font-style: normal;
   font-optical-sizing: auto;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media (max-width: 1024px) {
+  @media (width <= 1024px) {
     font-size: 16px;
   }
 }
@@ -41,7 +36,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   max-width: 80%;
 
-  @media (max-width: 1024px) {
+  @media (width <= 1024px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     max-width: 90%;

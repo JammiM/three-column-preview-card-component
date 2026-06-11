@@ -1,25 +1,25 @@
 .card {
   padding: 40px;
   color: var(--default-white);
-  font-family: var(--ff-Lexend-Deca);
+  font-family: var(--ff-lexend-deca);
   font-weight: var(--fw-light);
   display: grid;
   gap: 1em;
   justify-items: start;
 
-  @media (max-width: 1024px) {
+  @media (width <= 1024px) {
     gap: 0.5em;
     padding: 20px;
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     height: 450px;
     width: 300px;
   }
 }
 
 .card-heading {
-  font-family: var(--ff-Big-Shoulders);
+  font-family: var(--ff-big-shoulders);
   font-weight: var(--fw-bold);
 }
 
