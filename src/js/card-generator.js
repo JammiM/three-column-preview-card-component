@@ -12,7 +12,7 @@ export function addCardsToPage(element) {
     ).href;
 
     const singleCardTemplate = `
-    <article class="card" style="background-color: ${colour};" > 
+    <article class="card" data-card-colour=${heading} > 
         <picture>
             <img src=${iconUrl} alt="${heading} Logo"/>
         </picture>
