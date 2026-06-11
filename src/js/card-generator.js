@@ -16,7 +16,7 @@ export function addCardsToPage(element) {
         <picture>
             <img src=${iconUrl} alt="${heading} Logo"/>
         </picture>
-        <h1 class="card-heading">${heading}</h1>
+        <h1 class="card-heading">${heading.toLocaleUpperCase()}</h1>
         <p class="card-description">${description}</p>
         <button data-colour=${heading} class="card-learn-btn" type="button">Learn More</button>
     </article>`;
