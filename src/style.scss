@@ -13,6 +13,8 @@
 
   background: var(--bg);
   font-synthesis: none;
+  font-style: normal;
+  font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,6 +22,16 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+.lexend-deca-font {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.big-shoulders-font {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
 }
 
 main {
