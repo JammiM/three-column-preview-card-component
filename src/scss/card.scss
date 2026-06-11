@@ -11,6 +11,11 @@
     gap: 0.5em;
     padding: 20px;
   }
+
+  @media (min-width: 1024px) {
+    height: 450px;
+    width: 300px;
+  }
 }
 
 .card-heading {
