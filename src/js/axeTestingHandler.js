@@ -1,4 +1,4 @@
-import * as axe from "axe-core";
+import axe from "axe-core";
 
 window.addEventListener("load", function () {
   console.log("All assets are loaded");
