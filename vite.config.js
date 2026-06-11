@@ -1,9 +1,17 @@
 import { defineConfig } from "vite";
 import path from "path";
+import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [],
+  plugins: [
+    visualizer({
+      open: true, // Automatically opens the report in your browser after building
+      filename: "stats.html", // Name of the file to be generated
+      gzipSize: true, // Shows what the size will be after server compression
+      brotliSize: true, // Shows optimized size for modern browsers
+    }),
+  ],
   server: {
     port: 3000,
   },
