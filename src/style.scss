@@ -6,10 +6,16 @@
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
 
+  --ff-Lexend-Deca: "Lexend Deca", sans-serif;
+  --ff-Big-Shoulders: "Big Shoulders", sans-serif;
+
   --default-white: hsl(0, 0%, 100%);
   --luxury-clr: hsl(179, 100%, 13%);
   --suv-clr: hsl(184, 100%, 22%);
   --sedans-clr: hsl(31, 80%, 38%);
+
+  --fw-light: 400;
+  --fw-bold: 700;
 
   background: var(--bg);
   font-synthesis: none;
@@ -22,16 +28,6 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
-}
-
-.lexend-deca-font {
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-}
-
-.big-shoulders-font {
-  font-family: "Big Shoulders", sans-serif;
-  font-weight: 700;
 }
 
 main {
