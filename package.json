@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "eslint": "npx eslint './src/'",
     "preview": "vite preview",
     "lint": "npx stylelint \"**/*.scss\""
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "axe-core": "^4.12.0",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0",
     "rollup-plugin-visualizer": "^7.0.1",
     "sass-embedded": "^1.100.0",
     "stylelint": "^17.13.0",
