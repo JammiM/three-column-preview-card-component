@@ -1,5 +1,5 @@
 .card {
-  padding: 40px;
+  padding: 2.5rem;
   color: var(--default-white);
   font-family: var(--ff-lexend-deca);
   font-weight: var(--fw-light);
@@ -7,13 +7,13 @@
   gap: 1em;
   justify-items: start;
 
-  @media (width <= 1024px) {
+  @media (width <= #{$breakpoint-lg}) {
     gap: 0.5em;
-    padding: 20px;
+    padding: 1.25rem;
     height: 350px;
   }
 
-  @media (width >= 1024px) {
+  @media (width >= #{$breakpoint-lg}) {
     height: 450px;
     width: 300px;
   }
@@ -25,11 +25,11 @@
 }
 
 .card-learn-btn {
-  padding: 10px;
+  padding: 0.625rem;
   border-color: var(--default-white);
-  border-radius: 50px;
+  border-radius: 3.125rem;
   border-style: double;
-  height: 50px;
+  height: 3.125rem;
   background-color: var(--default-white);
 
   &:active {
