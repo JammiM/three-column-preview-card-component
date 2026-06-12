@@ -4,7 +4,7 @@ export function addCardsToPage(element) {
   let htmlTemplate = "";
 
   cardData.map((card) => {
-    const { heading, description, colour } = card;
+    const { heading, description } = card;
 
     const iconUrl = new URL(
       `../assets/icon-${heading.toLowerCase()}.svg`,
