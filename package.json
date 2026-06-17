@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "autoprefixer": "^10.5.0",
     "axe-core": "^4.12.0",
     "eslint": "^10.4.1",
     "globals": "^17.6.0",
