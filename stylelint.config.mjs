@@ -4,6 +4,9 @@ export default {
   rules: {
     "media-query-no-invalid": null,
     "selector-max-id": 1,
+    "max-nesting-depth": 1,
+    "selector-max-compound-selectors": 1,
+    "selector-max-specificity": null,
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
@@ -23,6 +26,14 @@ export default {
       {
         // Keeps the linter safe if you use modern CSS modules or features
         ignoreProperties: ["composes"],
+      },
+    ],
+    overrides: [
+      {
+        files: ["**/*.css"],
+        rules: {
+          "selector-max-specificity": "1,0,0",
+        },
       },
     ],
   },
