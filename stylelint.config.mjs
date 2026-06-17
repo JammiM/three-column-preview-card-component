@@ -28,13 +28,13 @@ export default {
         ignoreProperties: ["composes"],
       },
     ],
-    overrides: [
-      {
-        files: ["**/*.css"],
-        rules: {
-          "selector-max-specificity": "1,0,0",
-        },
-      },
-    ],
   },
+  overrides: [
+    {
+      files: ["**/*.css"],
+      rules: {
+        "selector-max-specificity": "1,0,0",
+      },
+    },
+  ],
 };
