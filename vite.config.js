@@ -16,11 +16,15 @@ export default defineConfig({
     port: 3000,
   },
   css: {
+    postcss: "./postcss.config.js",
     preprocessorOptions: {
       scss: {
         additionalData: `@use "@/scss/_variables.scss" as *;`,
       },
     },
+  },
+  build: {
+    emptyOutDir: true,
   },
   resolve: {
     alias: {
