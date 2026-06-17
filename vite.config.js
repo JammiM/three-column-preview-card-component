@@ -6,7 +6,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 export default defineConfig({
   plugins: [
     visualizer({
-      open: true, // Automatically opens the report in your browser after building
+      open: false,
       filename: "stats.html", // Name of the file to be generated
       gzipSize: true, // Shows what the size will be after server compression
       brotliSize: true, // Shows optimized size for modern browsers
