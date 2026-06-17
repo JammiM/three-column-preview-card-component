@@ -35,7 +35,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   max-width: 80%;
 
-  @media (width <= #{$breakpoint-lg}) {
+  @media (max-width: $breakpoint-lg) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     max-width: 90%;
@@ -43,24 +43,24 @@ main {
 
   > article {
     &:nth-child(1) {
-      @media (min-width: #{$breakpoint-lg}) {
+      @media (min-width: $breakpoint-lg) {
         border-end-start-radius: $card-radius;
         border-start-start-radius: $card-radius;
       }
 
-      @media (max-width: #{$breakpoint-lg}) {
+      @media (max-width: $breakpoint-lg) {
         border-start-start-radius: $card-radius;
         border-start-end-radius: $card-radius;
       }
     }
 
     &:nth-child(3) {
-      @media (min-width: #{$breakpoint-lg}) {
+      @media (min-width: $breakpoint-lg) {
         border-end-end-radius: $card-radius;
         border-start-end-radius: $card-radius;
       }
 
-      @media (max-width: #{$breakpoint-lg}) {
+      @media (max-width: $breakpoint-lg) {
         border-end-start-radius: $card-radius;
         border-end-end-radius: $card-radius;
       }
