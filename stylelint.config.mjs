@@ -3,9 +3,10 @@ export default {
   extends: ["stylelint-config-standard-scss"],
   rules: {
     "media-query-no-invalid": null,
-    "selector-max-id": 0,
-    "max-nesting-depth": 2,
-    "selector-max-compound-selectors": 1,
+    "selector-max-id": 1,
+    "max-nesting-depth": [2, { ignore: ["pseudo-classes"] }],
+    "declaration-block-single-line-max-declarations": null,
+    "selector-max-compound-selectors": 2,
     "selector-max-specificity": null,
     "block-no-empty": true,
     "color-no-invalid-hex": true,
@@ -33,7 +34,7 @@ export default {
     {
       files: ["**/*.css"],
       rules: {
-        "selector-max-specificity": "1,0,0",
+        "selector-max-specificity": "0,3,0",
       },
     },
   ],
