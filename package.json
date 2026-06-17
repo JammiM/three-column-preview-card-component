@@ -11,6 +11,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:css": "vite build && stylelint \"dist/**/*.css\"",
+    "stylelint": "npx stylelint '**/*.scss'",
+    "stylelint:fix": "npx stylelint '**/*.scss' --fix",
     "eslint": "npx eslint './src/'",
     "preview": "vite preview",
     "lint": "npx stylelint \"**/*.scss\""
