@@ -3,7 +3,7 @@ export default {
   extends: ["stylelint-config-standard-scss"],
   rules: {
     "media-query-no-invalid": null,
-
+    "selector-max-id": 0,
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
