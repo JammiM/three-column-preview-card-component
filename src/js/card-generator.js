@@ -5,11 +5,8 @@ export function addCardsToPage(element) {
 
   const fragment = document.createDocumentFragment();
 
-  cardData.forEach(({ heading, description }) => {
-    const iconUrl = new URL(
-      `../assets/icon-${heading.toLowerCase()}.svg`,
-      import.meta.url
-    ).href;
+  cardData.forEach(({ heading, description, image }) => {
+    const iconUrl = new URL(`../assets/${image}`, import.meta.url).href;
 
     const articleElem = document.createElement("article");
 
