@@ -22,6 +22,14 @@ export function addCardsToPage(element) {
       <button data-colour="${heading}" class="card-learn-btn" type="button">Learn More</button>
     `;
 
+    articleElem.addEventListener("click", (event) => {
+      const button = event.target.closest(".card-learn-btn");
+
+      if (!button) return;
+
+      console.log(`Clicked button color: ${button.dataset.colour}`);
+    });
+
     fragment.append(articleElem);
   });
 
