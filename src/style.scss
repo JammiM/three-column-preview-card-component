@@ -30,7 +30,7 @@ main {
   min-height: 100vh;
 }
 
-#card-holder {
+.card-holder {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 80%;

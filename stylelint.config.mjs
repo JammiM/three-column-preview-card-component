@@ -3,8 +3,8 @@ export default {
   extends: ["stylelint-config-standard-scss"],
   rules: {
     "media-query-no-invalid": null,
-    "selector-max-id": 1,
-    "max-nesting-depth": 1,
+    "selector-max-id": 0,
+    "max-nesting-depth": 2,
     "selector-max-compound-selectors": 1,
     "selector-max-specificity": null,
     "block-no-empty": true,

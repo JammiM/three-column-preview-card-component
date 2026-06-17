@@ -8,9 +8,9 @@ import { addCardsToPage } from "./js/card-generator.js";
 
 document.querySelector("#app").innerHTML = `
 <main>
-  <section id="card-holder">
+  <section class="card-holder">
   </section>
 </main>
 `;
 
-addCardsToPage(document.querySelector("#card-holder"));
+addCardsToPage(document.querySelector(".card-holder"));
