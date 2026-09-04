@@ -60,6 +60,13 @@ export default {
       message:
         "Consider using fluid functions like clamp(), min(), or max() for responsive layouts.",
     },
+    "media-feature-name-disallowed-list": [
+      ["max-width"],
+      {
+        message:
+          "Use a mobile-first approach with min-width instead of max-width.",
+      },
+    ],
   },
   overrides: [
     {
