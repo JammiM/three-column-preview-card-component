@@ -37,6 +37,16 @@ export default {
       },
     ],
     "declaration-property-value-allowed-list": {
+      ["font-size"]: [
+        "/clamp\\(/",
+        "/min\\(/",
+        "/max\\(/",
+        "/calc\\(/",
+        "0",
+        "auto",
+        "inherit",
+        "initial",
+      ],
       margin: [
         "/clamp\\(/",
         "/min\\(/",
