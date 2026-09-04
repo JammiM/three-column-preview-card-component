@@ -1,6 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
   extends: ["stylelint-config-standard-scss"],
+  plugins: ["stylelint-declaration-strict-value"],
   rules: {
     "media-query-no-invalid": null,
     "selector-max-id": 1,
@@ -27,6 +28,12 @@ export default {
       {
         // Keeps the linter safe if you use modern CSS modules or features
         ignoreProperties: ["composes"],
+      },
+    ],
+    "scale-unlimited/declaration-strict-value": [
+      ["box-shadow", "background-color", "color", "background"],
+      {
+        ignoreValues: ["none", "transparent", "inherit"],
       },
     ],
   },
