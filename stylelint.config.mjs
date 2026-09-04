@@ -36,6 +36,30 @@ export default {
         ignoreValues: ["none", "transparent", "inherit"],
       },
     ],
+    "declaration-property-value-allowed-list": {
+      margin: [
+        "/clamp\\(/",
+        "/min\\(/",
+        "/max\\(/",
+        "/calc\\(/",
+        "0",
+        "auto",
+        "inherit",
+        "initial",
+      ],
+      padding: [
+        "/clamp\\(/",
+        "/min\\(/",
+        "/max\\(/",
+        "/calc\\(/",
+        "0",
+        "inherit",
+        "initial",
+      ],
+      severity: "warning",
+      message:
+        "Consider using fluid functions like clamp(), min(), or max() for responsive layouts.",
+    },
   },
   overrides: [
     {
