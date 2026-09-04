@@ -21,7 +21,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   @media (width <= #{$breakpoint-lg}) {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.85rem + 0.75vw, 1.25rem);
   }
 }
 
