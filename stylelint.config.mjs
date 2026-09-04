@@ -37,7 +37,7 @@ export default {
       },
     ],
     "declaration-property-value-allowed-list": {
-      ["font-size"]: [
+      "font-size": [
         "/clamp\\(/",
         "/min\\(/",
         "/max\\(/",
